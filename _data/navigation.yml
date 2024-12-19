@@ -1,0 +1,5 @@
+# Navigation menu in the header
+- title: "Poems"
+  url: "poems"
+- title: "Another section"
+  url: "another-section"

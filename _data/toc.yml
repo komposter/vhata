@@ -1,0 +1,7 @@
+# Navigation menu in the sidebar
+- title: "Home"
+  external_url: "https://komposter.github.io/vhata/"
+- title: "Poems"
+  url: "poems"
+- title: "Another section"
+  url: "another-section"
