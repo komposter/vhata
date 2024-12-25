@@ -6,18 +6,11 @@ permalink: /
 
 ### A page in memory of one good man
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+#### Random poem
 
-<ul>
-  {% for page in site.pages %}
-    <li>
-      <a href="{{ page.url }}">{{ page.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+{% assign random_poem = site.posts | where: "categories", "poems" | sample %}
+<div style="font-family: Arial, sans-serif; line-height: 1.6; font-size: 16px;">
+  {{ random_poem.content }}
+</div>
+
+<br /><br />
