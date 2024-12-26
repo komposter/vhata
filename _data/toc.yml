@@ -1,6 +1,6 @@
 # Navigation menu in the sidebar
 - title: "Home"
-  url: "/"
+  url: ""
 - title: "Poems"
   url: "poems"
 - title: "Prose"
