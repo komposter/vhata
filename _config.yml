@@ -82,6 +82,8 @@ fixedNav: 'false' # true or false
 
 permalink: /:year/:title/
 exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
+include:
+  - posts.json
 
 # Collections
 collections:
