@@ -31,14 +31,15 @@ permalink: /
           const parser = new DOMParser();
           const doc = parser.parseFromString(html, 'text/html');
 
-          // Извлекаем заголовок и содержимое поста
-          const postTitle = doc.querySelector('h1').textContent;
+          // Извлекаем содержимое поста
           const postContent = doc.querySelector('.post-content') || doc.querySelector('.page-content');
 
-          // Отображаем содержимое в контейнере
+          // Отображаем заголовок с ссылкой и содержимое в контейнере
           const postContainer = document.getElementById('random-post');
           postContainer.innerHTML = `
-            <h2>${postTitle}</h2>
+            <h2>
+              <a href="${randomPost.url}">${randomPost.title}</a>
+            </h2>
             <div>${postContent ? postContent.innerHTML : 'Содержимое не найдено.'}</div>
           `;
         });
