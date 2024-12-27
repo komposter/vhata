@@ -25,7 +25,7 @@ permalink: /
 
 <script>
   // Загружаем список постов из JSON-файла
-  fetch('/posts.json')
+  fetch('/vhata/posts.json')
     .then(response => response.json())
     .then(posts => {
       // Выбираем случайный пост

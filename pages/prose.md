@@ -4,7 +4,7 @@ title: Prose
 permalink: /prose/
 ---
 
-#### Prose
+### Проза
 
 {% for post in site.posts %}
     {% if post.categories contains 'prose' %}

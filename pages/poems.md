@@ -4,7 +4,7 @@ title: Poems
 permalink: /poems/
 ---
 
-#### Poems
+### Стихи
 
 {% for post in site.posts %}
     {% if post.categories contains 'poems' %}
