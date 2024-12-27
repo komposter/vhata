@@ -6,17 +6,7 @@ permalink: /
 
 ## A page in memory of one good man
 
-<div style="display: flex;">
-
-<div style="flex: 1; padding: 10px;">
-    [<button class="btn btn-warning">Стихи</button>](poems)
-
-</div>
-
-<div style="flex: 1; padding: 10px;">
-    [<button class="btn btn-info">Проза</button>](prose)
-
-</div>
+[<button class="btn btn-warning">  Стихи  </button>](poems)     [<button class="btn btn-info">   Проза   </button>](prose)
 
 ---
 
