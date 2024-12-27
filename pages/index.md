@@ -4,19 +4,11 @@ title: Valentin Hata
 permalink: /
 ---
 
-### A page in memory of one good man
+# A page in memory of one good man
 
-[<button class="btn btn-warning">Стихи</button>](poems)
+[<button class="btn btn-warning">Стихи</button>](poems) [<button class="btn btn-info">Проза</button>](prose)
 
-[<button class="btn btn-info">Проза</button>](prose)
-
-
-<br /><br />
-
-#### Random poem
-
-
-<br /><br />
+---
 
 <div id="random-post">
   <!-- Здесь будет отображаться случайное произведение -->
