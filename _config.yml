@@ -92,7 +92,7 @@ collections:
     permalink: /:collection/:path
   posts:
     output: true
-    permalink: /:categories/:year/:month/:day/:title:output_ext
+    permalink: /:categories/:year/:title:output_ext
 
 # Defaults
 defaults:
