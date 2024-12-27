@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Prose
+title: Проза
 permalink: /prose/
 ---
 

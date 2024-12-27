@@ -1,7 +1,7 @@
 # Navigation menu in the sidebar
 - title: "Home"
   url: ""
-- title: "Poems"
+- title: "Стихи"
   url: "poems"
-- title: "Prose"
+- title: "Проза"
   url: "prose"

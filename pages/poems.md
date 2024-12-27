@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Poems
+title: Стихи
 permalink: /poems/
 ---
 
