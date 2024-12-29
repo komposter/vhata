@@ -3,9 +3,34 @@ layout: null
 excluded_in_search: true
 ---
 
+@import "https://fonts.googleapis.com/css2?family=Special+Elite&display=swap";
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i";
 @fa-font-path: "../webfonts";
 
+.post-title {
+    font-family: 'Special Elite', 'Courier New', monospace; /* Печатная машинка */
+    text-align: center; /* Центрируем заголовок */
+    font-size: 2em; /* Увеличиваем размер шрифта */
+    margin-bottom: 20px;
+    color: #2b2b2b; /* Тёмный цвет текста */
+}
+.poem-content {
+    font-family: 'Special Elite', 'Courier New', monospace; /* Печатная машинка */
+    font-size: 1.2em; /* Размер текста */
+    line-height: 1.8; /* Увеличенное межстрочное расстояние */
+    background-color: #fdf5e6; /* Фон, похожий на старую бумагу */
+    color: #333; /* Цвет текста */
+    padding: 20px;
+    border: 1px solid #ddd; /* Лёгкая рамка */
+    border-radius: 4px; /* Сглаженные углы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+    white-space: pre-wrap; /* Сохраняем форматирование отступов и переносов */
+}
+.poem-content {
+    background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+    background-size: cover;
+    background-blend-mode: multiply; /* Смешиваем текстуру с цветом */
+}
 .gh-source {
     display: block;
     padding-right: 1.2rem;
