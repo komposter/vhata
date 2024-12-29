@@ -18,9 +18,6 @@ excluded_in_search: true
     padding: 10px 0;
     border: 1px solid #ddd;
     border-radius: 4px;
-    background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
-    background-size: cover;
-    background-blend-mode: multiply;
     width: 100%;
     box-sizing: border-box;
 }
