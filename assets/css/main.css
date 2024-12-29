@@ -24,10 +24,10 @@ excluded_in_search: true
 .poem-content {
     font-family: 'Special Elite', 'Courier New', monospace; /* Печатная машинка */
     font-size: 1.2em; /* Размер текста */
-    line-height: 1.4; /* Увеличенное межстрочное расстояние */
+    line-height: 1.8; /* Увеличенное межстрочное расстояние */
     background-color: #fdf5e6; /* Фон, похожий на старую бумагу */
     color: #333; /* Цвет текста */
-    padding: 20px;
+    padding: 5px;
     border: 1px solid #ddd; /* Лёгкая рамка */
     border-radius: 4px; /* Сглаженные углы */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
