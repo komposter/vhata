@@ -11,13 +11,20 @@ excluded_in_search: true
     font-family: 'Special Elite', 'Courier New', monospace; /* Печатная машинка */
     text-align: center; /* Центрируем заголовок */
     font-size: 2em; /* Увеличиваем размер шрифта */
+    background-color: #fdf5e6; /* Фон, похожий на старую бумагу */
+    color: #333; /* Цвет текста */
     margin-bottom: 20px;
     color: #2b2b2b; /* Тёмный цвет текста */
+}
+.post-title {
+    background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+    background-size: cover;
+    background-blend-mode: multiply; /* Смешиваем текстуру с цветом */
 }
 .poem-content {
     font-family: 'Special Elite', 'Courier New', monospace; /* Печатная машинка */
     font-size: 1.2em; /* Размер текста */
-    line-height: 1.8; /* Увеличенное межстрочное расстояние */
+    line-height: 1.0; /* Увеличенное межстрочное расстояние */
     background-color: #fdf5e6; /* Фон, похожий на старую бумагу */
     color: #333; /* Цвет текста */
     padding: 20px;
