@@ -9,12 +9,19 @@ excluded_in_search: true
 
 /* Заголовок */
 .post-title {
+    font-family: 'Special Elite', 'Courier New', monospace;
     text-align: center;
     font-size: 2em;
     background-color: #fdf5e6;
     color: #2b2b2b;
     margin: 0 0 10px;
     padding: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -38,12 +45,12 @@ excluded_in_search: true
 /* Абзацы */
 .poem-content p {
     margin: 0;
-    padding: 0 0 10px;
+    padding: 20px 0 1px;
 }
 
 /* Между абзацами */
 .poem-content p + p {
-    margin-top: 10px;
+    margin-top: 1px;
 }
 
 /* Дата */
