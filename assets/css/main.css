@@ -17,6 +17,7 @@ excluded_in_search: true
     padding: 0; /* Убраны отступы */
     width: 100%;
     box-sizing: border-box;
+    display: inline-block; /* Убираем переносы строк вокруг элемента */
 }
 
 /* Контент стихов */
