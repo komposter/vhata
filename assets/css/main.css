@@ -14,22 +14,15 @@ excluded_in_search: true
     font-size: 2em;
     background-color: #fdf5e6;
     color: #2b2b2b;
-    margin-bottom: 10px; /* Уменьшено расстояние */
-    padding: 10px; /* Добавлен отступ */
-    border: 1px solid #ddd; /* Лёгкая рамка */
-    border-radius: 4px; /* Сглаженные углы */
+    margin: 0 0 10px;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
     background-size: cover;
     background-blend-mode: multiply;
-}
-
-.post-date {
-    font-family: 'Courier New', monospace;
-    font-size: 0.9em;
-    color: #666;
-    text-align: center;
-    margin: -10px 0 10px;
-    display: block;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Контент стихов */
@@ -49,12 +42,27 @@ excluded_in_search: true
     background-blend-mode: multiply;
 }
 
-/* Абзацы внутри стихов */
+/* Абзацы */
 .poem-content p {
     margin: 0;
     padding: 0 0 10px;
-    text-indent: 2em;
 }
+
+/* Между абзацами */
+.poem-content p + p {
+    margin-top: 10px;
+}
+
+/* Дата */
+.post-date {
+    font-family: 'Special Elite', 'Courier New', monospace;
+    font-size: 1.2em;
+    color: #333;
+    text-align: right;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
 .gh-source {
     display: block;
     padding-right: 1.2rem;

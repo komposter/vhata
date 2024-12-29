@@ -8,7 +8,7 @@ layout: page
     <span class="badge badge-{{ badge.type }}">{{ badge.tag }}</span>
   {% endfor %}
 {% endif %}
-<span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
 <div class="post-content poem-content">
   {{ content }}
+  <div class="post-date">{{ page.date | date: "%B %d, %Y" }}</div>
 </div>
