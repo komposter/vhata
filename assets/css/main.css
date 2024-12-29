@@ -27,7 +27,7 @@ excluded_in_search: true
     line-height: 1.8;
     background-color: #fdf5e6;
     color: #333;
-    padding: 20px;
+    padding: 40px;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -46,16 +46,13 @@ excluded_in_search: true
 
 /* Между абзацами */
 .poem-content p + p {
-    margin-top: 1px;
+    margin-top: 10px;
 }
 
 /* Дата */
 .post-date {
     font-family: 'Special Elite', 'Courier New', monospace;
-    font-size: 1.0em;
     color: #333;
-    text-align: center;
-    margin-top: 2px;
     line-height: 1.8;
     display: inline-block; /* Убираем переносы строк вокруг элемента */
 }
