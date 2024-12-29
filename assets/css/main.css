@@ -24,7 +24,7 @@ excluded_in_search: true
 .poem-content {
     font-family: 'Special Elite', 'Courier New', monospace; /* Печатная машинка */
     font-size: 1.2em; /* Размер текста */
-    line-height: 1.0; /* Увеличенное межстрочное расстояние */
+    line-height: 1.4; /* Увеличенное межстрочное расстояние */
     background-color: #fdf5e6; /* Фон, похожий на старую бумагу */
     color: #333; /* Цвет текста */
     padding: 20px;
