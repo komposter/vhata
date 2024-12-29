@@ -12,12 +12,9 @@ excluded_in_search: true
     font-family: 'Special Elite', 'Courier New', monospace;
     text-align: center;
     font-size: 2em;
-    background-color: #fdf5e6;
     color: #2b2b2b;
     margin: 0 0 10px;
     padding: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
     width: 100%;
     box-sizing: border-box;
 }
