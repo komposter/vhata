@@ -7,36 +7,53 @@ excluded_in_search: true
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i";
 @fa-font-path: "../webfonts";
 
+/* Заголовок */
 .post-title {
-    font-family: 'Special Elite', 'Courier New', monospace; /* Печатная машинка */
-    text-align: center; /* Центрируем заголовок */
-    font-size: 2em; /* Увеличиваем размер шрифта */
-    background-color: #fdf5e6; /* Фон, похожий на старую бумагу */
-    color: #333; /* Цвет текста */
-    margin-bottom: 20px;
-    color: #2b2b2b; /* Тёмный цвет текста */
-}
-.post-title {
-    background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
-    background-size: cover;
-    background-blend-mode: multiply; /* Смешиваем текстуру с цветом */
-}
-.poem-content {
-    font-family: 'Special Elite', 'Courier New', monospace; /* Печатная машинка */
-    font-size: 1.2em; /* Размер текста */
-    line-height: 1.8; /* Увеличенное межстрочное расстояние */
-    background-color: #fdf5e6; /* Фон, похожий на старую бумагу */
-    color: #333; /* Цвет текста */
-    padding: 0px;
+    font-family: 'Special Elite', 'Courier New', monospace;
+    text-align: center;
+    font-size: 2em;
+    background-color: #fdf5e6;
+    color: #2b2b2b;
+    margin-bottom: 10px; /* Уменьшено расстояние */
+    padding: 10px; /* Добавлен отступ */
     border: 1px solid #ddd; /* Лёгкая рамка */
     border-radius: 4px; /* Сглаженные углы */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
-    white-space: pre-wrap; /* Сохраняем форматирование отступов и переносов */
-}
-.poem-content {
     background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
     background-size: cover;
-    background-blend-mode: multiply; /* Смешиваем текстуру с цветом */
+    background-blend-mode: multiply;
+}
+
+.post-date {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    margin: -10px 0 10px;
+    display: block;
+}
+
+/* Контент стихов */
+.poem-content {
+    font-family: 'Special Elite', 'Courier New', monospace;
+    font-size: 1.2em;
+    line-height: 1.8;
+    background-color: #fdf5e6;
+    color: #333;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: pre-wrap;
+    background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+/* Абзацы внутри стихов */
+.poem-content p {
+    margin: 0;
+    padding: 0 0 10px;
+    text-indent: 2em;
 }
 .gh-source {
     display: block;
