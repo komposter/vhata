@@ -14,7 +14,24 @@ excluded_in_search: true
     line-height: 1.8;
     background-color: #fdf5e6;
     color: #333;
-    padding: 20%;
+    padding: 20% 0 0 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: pre-wrap;
+    background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+    letter-spacing: 0.05em; /* Увеличено расстояние между буквами */
+}
+
+.prose-content {
+    font-family: 'Special Elite', 'Courier New', monospace;
+    font-size: 1.2em;
+    line-height: 1.8;
+    background-color: #fdf5e6;
+    color: #333;
+    padding: 10px 0 0 0;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
