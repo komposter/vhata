@@ -47,6 +47,7 @@ excluded_in_search: true
 
 .post-title {
     font-family: 'Special Elite', 'Courier New', monospace;
+    font-size: 2.0em;
     color: #333;
     display: inline-block; /* Убираем переносы строк вокруг элемента */
 }
