@@ -7,18 +7,7 @@ excluded_in_search: true
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i";
 @fa-font-path: "../webfonts";
 
-/* Заголовок */
-.post-title {
-    font-family: 'Special Elite', 'Courier New', monospace;
-    text-align: center;
-    font-size: 2em;
-    color: #2b2b2b;
-    margin: 0; /* Убраны отступы */
-    padding: 0; /* Убраны отступы */
-    width: 100%;
-    box-sizing: border-box;
-    display: inline-block; /* Убираем переносы строк вокруг элемента */
-}
+
 
 /* Контент стихов */
 .poem-content {
@@ -46,14 +35,19 @@ excluded_in_search: true
 
 /* Между абзацами */
 .poem-content p + p {
-    margin-top: 10px;
+    margin-top: 3px;
 }
 
 /* Дата */
 .post-date {
     font-family: 'Special Elite', 'Courier New', monospace;
     color: #333;
-    line-height: 1.8;
+    display: inline-block; /* Убираем переносы строк вокруг элемента */
+}
+
+.post-title {
+    font-family: 'Special Elite', 'Courier New', monospace;
+    color: #333;
     display: inline-block; /* Убираем переносы строк вокруг элемента */
 }
 
