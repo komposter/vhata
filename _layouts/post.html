@@ -9,6 +9,6 @@ layout: page
 {% endif %}
 <div class="post-content poem-content">
   <div class="post-title">{{ page.title }}</div>
-  {{ content }}
+  {{ content | strip_newlines }}
   <div class="post-date">{{ page.date | date: "%d.%m.%Y" }}</div>
 </div>

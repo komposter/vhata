@@ -57,6 +57,7 @@ excluded_in_search: true
     text-align: center;
     margin-top: 2px;
     line-height: 1.8;
+    display: inline-block; /* Убираем переносы строк вокруг элемента */
 }
 
 .gh-source {
