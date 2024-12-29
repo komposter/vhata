@@ -1,19 +1,17 @@
 ---
 layout: page
 ---
-<!-- Copyright 2019-2021 Vanessa Sochat-->
 {% if page.badges %}
   {% for badge in page.badges %}
     <span class="badge badge-{{ badge.type }}">{{ badge.tag }}</span>
   {% endfor %}
 {% endif %}
-<!-- use poem-content class for poems category and prose-content for prose category -->
 {% if page.category == "poems" %}
-  <div class="post-content poem-content">
+  <div class="poem-content">
 {% else %}
-  <div class="post-content prose-content">
+  <div class="prose-content">
 {% endif %}
-    <div class="post-title">{{ page.title | strip }}</div>
+    <div class="post-title">{{ page.title }}</div>
     {{ content | strip_newlines }}
-    <div class="post-date">{{ page.date | date: "%d.%m.%Y" | strip_newlines }}</div>
+    <div class="post-date">{{ page.date | date: "%d.%m.%Y" }}</div>
   </div>
