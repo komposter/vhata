@@ -4,15 +4,9 @@ title: Valentin Hata
 permalink: /
 ---
 
-## A page in memory of one good man
 
+[<button class="btn btn-warning">&nbsp;&nbsp;&nbsp;Стихи&nbsp;&nbsp;&nbsp;</button>](poems)&nbsp;&nbsp;&nbsp;&nbsp;[<button class="btn btn-info">&nbsp;&nbsp;&nbsp;Проза&nbsp;&nbsp;&nbsp;</button>](prose)&nbsp;&nbsp;&nbsp;&nbsp;[<button class="btn btn-success">&nbsp;&nbsp;&nbsp;Загрузить случайное произведение&nbsp;&nbsp;&nbsp;</button>](javascript:void(0))
 <br>
-
-[<button class="btn btn-warning">&nbsp;&nbsp;&nbsp;Стихи&nbsp;&nbsp;&nbsp;</button>](poems)&nbsp;&nbsp;&nbsp;&nbsp;[<button class="btn btn-info">&nbsp;&nbsp;&nbsp;Проза&nbsp;&nbsp;&nbsp;</button>](prose)
-
-<br>
-
----
 
 <div id="random-post">
   <!-- Здесь будет отображаться случайное произведение -->
