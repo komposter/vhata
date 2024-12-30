@@ -5,7 +5,7 @@ permalink: /
 ---
 
 
-[<button class="btn btn-warning">&nbsp;&nbsp;&nbsp;Стихи&nbsp;&nbsp;&nbsp;</button>](poems)&nbsp;&nbsp;&nbsp;&nbsp;[<button class="btn btn-info">&nbsp;&nbsp;&nbsp;Проза&nbsp;&nbsp;&nbsp;</button>](prose)&nbsp;&nbsp;&nbsp;&nbsp;[<button class="btn btn-success">&nbsp;&nbsp;&nbsp;Загрузить случайное произведение&nbsp;&nbsp;&nbsp;</button>](javascript:void(0))
+[<button class="btn btn-warning">&nbsp;&nbsp;&nbsp;Стихи&nbsp;&nbsp;&nbsp;</button>](poems)&nbsp;&nbsp;&nbsp;&nbsp;[<button class="btn btn-info">&nbsp;&nbsp;&nbsp;Проза&nbsp;&nbsp;&nbsp;</button>](prose)&nbsp;&nbsp;&nbsp;&nbsp;[<button class="btn btn-success">&nbsp;&nbsp;&nbsp;Загрузить случайное&nbsp;&nbsp;&nbsp;</button>]())
 <br>
 
 <div id="random-post">
