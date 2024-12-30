@@ -8,7 +8,7 @@ permalink: /
 
 [<button class="btn btn-warning">  Стихи  </button>](poems)     [<button class="btn btn-info">   Проза   </button>](prose)
 
----
+--- Случайное произведение ---
 
 <div id="random-post">
   <!-- Здесь будет отображаться случайное произведение -->
