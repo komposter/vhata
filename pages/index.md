@@ -8,13 +8,11 @@ permalink: /
 
 <br>
 
-[<button class="btn btn-warning">  Стихи  </button>](poems)     [<button class="btn btn-info">   Проза   </button>](prose)
+[<button class="btn btn-warning">&nbsp;&nbsp;&nbsp;Стихи&nbsp;&nbsp;&nbsp;</button>](poems)&nbsp;&nbsp;&nbsp;&nbsp;[<button class="btn btn-info">&nbsp;&nbsp;&nbsp;Проза&nbsp;&nbsp;&nbsp;</button>](prose)
 
 <br>
 
 ---
-
-### Случайное произведение
 
 <div id="random-post">
   <!-- Здесь будет отображаться случайное произведение -->
