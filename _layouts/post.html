@@ -7,9 +7,9 @@ layout: page
   {% endfor %}
 {% endif %}
 {% if page.category == "poems" %}
-<div class="poem-content">
+<div class="post-content poem-content">
 {% else %}
-<div class="prose-content">
+<div class="post-content prose-content">
 {% endif %}<div class="post-title">{{ page.title }}</div>{{ content | strip_newlines }}
 <div class="post-date">{{ page.date | date: "%d.%m.%Y" }}</div>
 </div>
