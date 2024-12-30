@@ -6,9 +6,15 @@ permalink: /
 
 ## A page in memory of one good man
 
+<br>
+
 [<button class="btn btn-warning">  Стихи  </button>](poems)     [<button class="btn btn-info">   Проза   </button>](prose)
 
---- Случайное произведение ---
+<br>
+
+---
+
+### Случайное произведение
 
 <div id="random-post">
   <!-- Здесь будет отображаться случайное произведение -->
