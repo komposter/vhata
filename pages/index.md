@@ -23,14 +23,21 @@ permalink: /
       // Выбираем случайное произведение из списка
       const randomPost = posts[Math.floor(Math.random() * posts.length)];
 
-      // Вставляем случайный пост в iframe
-      const postContainer = document.getElementById('random-post');
-      postContainer.innerHTML = `
-        <iframe 
-          src="${randomPost.url}" 
-          style="width: 100%; height: 100vh; border: none;">
-        </iframe>
-      `;
+      // Загружаем содержимое страницы выбранного поста
+      return fetch(randomPost.url)
+        .then(response => response.text())
+        .then(html => {
+          // Парсим HTML содержимое страницы
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+
+          // Извлекаем только содержимое поста
+          const postContent = doc.querySelector('.post-content');
+
+          // Отображаем содержимое в контейнере
+          const postContainer = document.getElementById('random-post');
+          postContainer.innerHTML = postContent ? postContent.outerHTML : 'Содержимое не найдено.';
+        });
     })
     .catch(error => {
       console.error('Ошибка загрузки:', error);
