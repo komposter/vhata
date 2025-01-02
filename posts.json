@@ -3,10 +3,16 @@ layout: null
 ---
 
 [
-  {% for post in site.posts %}
+  {% for poem in site.poems %}
   {
-    "title": "{{ post.title | escape }}",
-    "url": "{{ post.url | prepend: site.baseurl }}"
+    "title": "{{ poem.title | escape }}",
+    "url": "{{ poem.url }}"
+  }{% if forloop.last == false or site.prose.size > 0 %},{% endif %}
+  {% endfor %}
+  {% for prose in site.prose %}
+  {
+    "title": "{{ prose.title | escape }}",
+    "url": "{{ prose.url }}"
   }{% if forloop.last == false %},{% endif %}
   {% endfor %}
 ]
