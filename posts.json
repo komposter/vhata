@@ -11,8 +11,8 @@ layout: null
   {% endfor %}
   {% for story in site.prose %}
   {
-    "title": "{{ prose.title | escape }}",
-    "url": "{{ prose.url | prepend: site.baseurl }}"
+    "title": "{{ story.title | escape }}",
+    "url": "{{ story.url | prepend: site.baseurl }}"
   }{% if forloop.last == false %},{% endif %}
   {% endfor %}
 ]
