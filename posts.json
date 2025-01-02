@@ -9,7 +9,7 @@ layout: null
     "url": "{{ poem.url | prepend: site.baseurl }}"
   }{% if forloop.last == false or site.prose.size > 0 %},{% endif %}
   {% endfor %}
-  {% for prose in site.prose %}
+  {% for story in site.prose %}
   {
     "title": "{{ prose.title | escape }}",
     "url": "{{ prose.url | prepend: site.baseurl }}"
