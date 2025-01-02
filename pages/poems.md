@@ -6,9 +6,9 @@ permalink: /poems/
 
 ### Стихи
 
-{% for poem in site.poems %}
-    {% if poem.categories contains 'poems' %}
-* <a href="{{ site.url }}{{ site.baseurl }}{{ poem.url }}">{{ poem.title }}</a>
+{% for post in site.poems %}
+    {% if post.categories contains 'poems' %}
+* <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     {% endif %}
 {% endfor %}
 
