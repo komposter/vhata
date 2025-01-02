@@ -90,7 +90,10 @@ collections:
   docs:
     output: true
     permalink: /:collection/:path
-  posts:
+  poems:
+    output: true
+    permalink: /:categories/:title:output_ext
+  prose:
     output: true
     permalink: /:categories/:title:output_ext
 
