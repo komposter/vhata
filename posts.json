@@ -6,13 +6,13 @@ layout: null
   {% for poem in site.poems %}
   {
     "title": "{{ poem.title | escape }}",
-    "url": "{{ poem.url }}"
+    "url": "{{ poem.url | prepend: site.baseurl }}"
   }{% if forloop.last == false or site.prose.size > 0 %},{% endif %}
   {% endfor %}
   {% for prose in site.prose %}
   {
     "title": "{{ prose.title | escape }}",
-    "url": "{{ prose.url }}"
+    "url": "{{ prose.url | prepend: site.baseurl }}"
   }{% if forloop.last == false %},{% endif %}
   {% endfor %}
 ]
