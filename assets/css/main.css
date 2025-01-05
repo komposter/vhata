@@ -7,63 +7,83 @@ excluded_in_search: true
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i";
 @fa-font-path: "../webfonts";
 
-/* Контент стихов */
+/* Общие стили для текстового контента (стихи и проза) */
+.post-content {
+    font-family: 'Special Elite', 'Courier New', monospace;
+    line-height: 1.8;
+    background-color: #fdf5e6;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: pre-wrap;
+    background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+    letter-spacing: 0.05em;
+    padding: 0 10%; /* Базовые отступы для обеих категорий */
+    font-size: 1.2em; /* Основной размер шрифта для десктопа */
+}
+
+/* Стихи */
 .poem-content {
-    font-family: 'Special Elite', 'Courier New', monospace;
-    font-size: 1.2em;
-    line-height: 1.8;
-    background-color: #fdf5e6;
-    color: #333;
-    padding: 0 15%;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    white-space: pre-wrap;
-    background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
-    background-size: cover;
-    background-blend-mode: multiply;
-    letter-spacing: 0.05em; /* Увеличено расстояние между буквами */
+    padding: 0 15%; /* Больше пространства для стихов */
 }
 
+/* Проза */
 .prose-content {
+    padding: 0 5%; /* Меньше пространства для прозы */
+}
+
+/* Заголовок */
+.post-title {
     font-family: 'Special Elite', 'Courier New', monospace;
-    font-size: 1.15em;
-    line-height: 1.8;
-    background-color: #fdf5e6;
+    font-size: 1.6em; /* Размер заголовка */
+    text-align: center;
     color: #333;
-    padding: 0 5%;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    white-space: pre-wrap;
-    background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
-    background-size: cover;
-    background-blend-mode: multiply;
-    letter-spacing: 0.05em; /* Увеличено расстояние между буквами */
-}
-
-/* Абзацы */
-.poem-content p {
-    margin: 0;
-    padding: 20px 0 1px;
-}
-
-/* Между абзацами */
-.poem-content p + p {
-    margin-top: 3px;
+    margin: 0; /* Убираем лишние отступы */
+    padding: 10px 0; /* Пространство вокруг заголовка */
 }
 
 /* Дата */
 .post-date {
     font-family: 'Special Elite', 'Courier New', monospace;
+    font-size: 1em;
     color: #333;
+    text-align: right;
+    margin-top: 10px; /* Отступ сверху для отделения от текста */
+    line-height: 1.8; /* Совпадает с основным текстом */
 }
 
-.post-title {
-    font-family: 'Special Elite', 'Courier New', monospace;
-    font-size: 1.6em;
-    text-align: center;
-    color: #333;
+/* Абзацы */
+.post-content p {
+    margin: 0; /* Убираем внешние отступы */
+    padding: 20px 0 1px; /* Пространство между абзацами */
+}
+
+/* Между абзацами */
+.post-content p + p {
+    margin-top: 3px; /* Небольшой отступ между соседними абзацами */
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .post-content {
+        font-size: 1em; /* Уменьшаем размер текста */
+        padding: 0 5%; /* Сужаем отступы для небольших экранов */
+    }
+    .poem-content {
+        padding: 0 8%; /* Чуть больше пространства для стихов на мобильных */
+    }
+    .prose-content {
+        padding: 0 3%; /* Ещё меньший отступ для прозы на мобильных */
+    }
+    .post-title {
+        font-size: 1.4em; /* Уменьшаем размер заголовка */
+    }
+    .post-date {
+        font-size: 0.9em; /* Слегка уменьшаем шрифт даты */
+    }
 }
 
 .gh-source {
