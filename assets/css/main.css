@@ -5833,7 +5833,7 @@ input[type=button].btn-block {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: .75rem 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     list-style: none;
     background-color: #eee;
     border-radius: .25rem
