@@ -5,8 +5,9 @@ permalink: /
 ---
 
 
-[<button class="btn btn-warning">&nbsp;&nbsp;&nbsp;Все стихи&nbsp;&nbsp;&nbsp;</button>](poems)&nbsp;&nbsp;&nbsp;&nbsp;[<button class="btn btn-info">&nbsp;&nbsp;&nbsp;Вся проза&nbsp;&nbsp;&nbsp;</button>](prose)&nbsp;&nbsp;&nbsp;&nbsp;[<button class="btn btn-success">&nbsp;&nbsp;&nbsp;Загрузить случайное&nbsp;&nbsp;&nbsp;</button>]()
-<br>
+[//]: # ([<button class="btn btn-warning">&nbsp;&nbsp;&nbsp;Все стихи&nbsp;&nbsp;&nbsp;</button>]&#40;poems&#41;&nbsp;&nbsp;&nbsp;&nbsp;[<button class="btn btn-info">&nbsp;&nbsp;&nbsp;Вся проза&nbsp;&nbsp;&nbsp;</button>]&#40;prose&#41;&nbsp;&nbsp;&nbsp;&nbsp;[<button class="btn btn-success">&nbsp;&nbsp;&nbsp;Загрузить случайное&nbsp;&nbsp;&nbsp;</button>]&#40;&#41;)
+
+[//]: # (<br>)
 
 <div id="random-post">
   <!-- Здесь будет отображаться случайное произведение -->
