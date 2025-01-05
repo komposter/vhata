@@ -3,7 +3,6 @@ layout: page
 title: Стихи
 permalink: /poems/
 ---
-
 ### Стихи
 
 {% for post in site.poems %}

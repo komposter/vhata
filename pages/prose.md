@@ -3,7 +3,6 @@ layout: page
 title: Проза
 permalink: /prose/
 ---
-
 ### Проза
 
 {% for story in site.prose %}
