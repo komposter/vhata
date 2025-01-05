@@ -10,7 +10,7 @@ excluded_in_search: true
 /* Контент стихов */
 .poem-content {
     font-family: 'Special Elite', 'Courier New', monospace;
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.8;
     background-color: #fdf5e6;
     color: #333;
@@ -27,7 +27,7 @@ excluded_in_search: true
 
 .prose-content {
     font-family: 'Special Elite', 'Courier New', monospace;
-    font-size: 1.25em;
+    font-size: 1.15em;
     line-height: 1.8;
     background-color: #fdf5e6;
     color: #333;
