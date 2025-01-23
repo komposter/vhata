@@ -48,7 +48,7 @@
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
                 <ol class="breadcrumb spb-1">
                     {% for crumb in crumbs offset: 1 %}
-                      {% if crumb != "index" %}
+<!--                      {% if crumb != "index" %}-->
                         {% if forloop.last %}
                           <li class="breadcrumb-item active" aria-current="page">
                             <a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
@@ -64,7 +64,7 @@
                             {% endif %}
                           {% endif %}
                         {% endif %}
-                      {% endif %}
+<!--                      {% endif %}-->
                     {% endfor %}
                 </ol>
             </nav>
