@@ -34,10 +34,13 @@ permalink: /
     
             crumbs.forEach((crumb, index) => {
               crumbPath += crumb + '/'; // Строим путь по мере итерации
-              const crumbName = decodeURIComponent(crumb) // Декодируем URL
-                .replace('-', ' ') // Заменяем дефисы на пробелы
-                .replace('.html', '') // Убираем расширение .html
-                .charAt(0).toUpperCase() + crumb.slice(1); // Преобразуем в заголовок
+    
+              // Декодируем и форматируем название крошки
+              const crumbName = decodeURIComponent(crumb)
+                .replace(/-/g, ' ') // Меняем дефисы на пробелы
+                .replace('.html', ''); // Убираем расширение .html
+    
+              // Проверяем, последний ли это элемент
               if (index === crumbs.length - 1) {
                 breadcrumbHtml += `<li class="breadcrumb-item active" aria-current="page">
                   <a href="${randomPost.url}">${crumbName}</a>
