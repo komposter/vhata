@@ -28,28 +28,26 @@ permalink: /
         const postContent = doc.querySelector('.post-content');
 
         // Генерируем хлебные крошки
+        const basePath = '{{ site.baseurl }}'; // Используем {{ site.baseurl }}
         const crumbs = randomPost.url.split('/').filter(Boolean).slice(1); // Убираем первый уровень (vhata)
         let breadcrumbHtml = '<nav aria-label="breadcrumb" class="breadcrumb-nav"><ol class="breadcrumb">';
-        let crumbPath = '/'; // Начальный путь
+        let crumbPath = basePath; // Начальный путь теперь содержит {{ site.baseurl }}
 
         crumbs.forEach((crumb, index) => {
-          crumbPath += crumb + '/'; // Строим путь по мере итерации
+          crumbPath += '/' + crumb; // Строим путь по мере итерации
 
           // Декодируем и форматируем название крошки
           const crumbName = decodeURIComponent(crumb)
             .replace(/-/g, ' ') // Меняем дефисы на пробелы
             .replace('.html', ''); // Убираем расширение .html
 
-          // Делаем первую букву заглавной
-          const formattedCrumbName = crumbName.charAt(0).toUpperCase() + crumbName.slice(1);
-
           // Проверяем, последний ли это элемент
           if (index === crumbs.length - 1) {
             breadcrumbHtml += `<li class="breadcrumb-item active" aria-current="page">
-              <a href="${randomPost.url}">${formattedCrumbName}</a>
+              <a href="${randomPost.url}">${randomPost.title}</a>
             </li>`;
           } else {
-            breadcrumbHtml += `<li class="breadcrumb-item"><a href="${crumbPath}">${formattedCrumbName}</a></li>`;
+            breadcrumbHtml += `<li class="breadcrumb-item"><a href="${crumbPath}/">${crumbName.charAt(0).toUpperCase() + crumbName.slice(1)}</a></li>`;
           }
         });
 
