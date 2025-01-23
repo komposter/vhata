@@ -34,7 +34,10 @@ permalink: /
 
           crumbs.forEach((crumb, index) => {
             crumbPath += crumb + '/'; // Строим путь по мере итерации
-            const crumbName = crumb.replace('-', ' ').replace('.html', '').charAt(0).toUpperCase() + crumb.slice(1); // Преобразуем в заголовок
+            const crumbName = decodeURIComponent(crumb) // Декодируем URL
+              .replace('-', ' ') // Заменяем дефисы на пробелы
+              .replace('.html', '') // Убираем расширение .html
+              .charAt(0).toUpperCase() + crumb.slice(1); // Преобразуем в заголовок
             if (index === crumbs.length - 1) {
               breadcrumbHtml += `<li class="breadcrumb-item active" aria-current="page">${crumbName}</li>`;
             } else {
