@@ -3,12 +3,6 @@ layout: page
 title: Valentin Hata
 permalink: /
 ---
-
-
-[//]: # ([<button class="btn btn-warning">&nbsp;&nbsp;&nbsp;Все стихи&nbsp;&nbsp;&nbsp;</button>]&#40;poems&#41;&nbsp;&nbsp;&nbsp;&nbsp;[<button class="btn btn-info">&nbsp;&nbsp;&nbsp;Вся проза&nbsp;&nbsp;&nbsp;</button>]&#40;prose&#41;&nbsp;&nbsp;&nbsp;&nbsp;[<button class="btn btn-success">&nbsp;&nbsp;&nbsp;Загрузить случайное&nbsp;&nbsp;&nbsp;</button>]&#40;&#41;)
-
-[//]: # (<br>)
-
 <div id="random-post">
   <!-- Здесь будет отображаться случайное произведение -->
   <h4> </h4>
@@ -33,9 +27,29 @@ permalink: /
           // Извлекаем только содержимое поста
           const postContent = doc.querySelector('.post-content');
 
-          // Отображаем содержимое в контейнере
+          // Генерируем хлебные крошки
+          const crumbs = randomPost.url.split('/').filter(Boolean); // Разбиваем URL на части
+          let breadcrumbHtml = '<nav aria-label="breadcrumb" class="breadcrumb-nav"><ol class="breadcrumb">';
+          let crumbPath = '/'; // Начальный путь
+
+          crumbs.forEach((crumb, index) => {
+            crumbPath += crumb + '/'; // Строим путь по мере итерации
+            const crumbName = crumb.replace('-', ' ').replace('.html', '').charAt(0).toUpperCase() + crumb.slice(1); // Преобразуем в заголовок
+            if (index === crumbs.length - 1) {
+              breadcrumbHtml += `<li class="breadcrumb-item active" aria-current="page">${crumbName}</li>`;
+            } else {
+              breadcrumbHtml += `<li class="breadcrumb-item"><a href="${crumbPath}">${crumbName}</a></li>`;
+            }
+          });
+
+          breadcrumbHtml += '</ol></nav>';
+
+          // Отображаем хлебные крошки и содержимое в контейнере
           const postContainer = document.getElementById('random-post');
-          postContainer.innerHTML = postContent ? postContent.outerHTML : 'Содержимое не найдено.';
+          postContainer.innerHTML = `
+            ${breadcrumbHtml}
+            ${postContent ? postContent.outerHTML : '<p>Содержимое не найдено.</p>'}
+          `;
         });
     })
     .catch(error => {
