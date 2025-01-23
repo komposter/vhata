@@ -5836,30 +5836,42 @@ input[type=button].btn-block {
     margin-bottom: 0;
     list-style: none;
     background-color: #eee;
-    border-radius: .25rem
+    border-radius: .25rem;
 }
 
 .breadcrumb-item+.breadcrumb-item {
-    padding-left: .5rem
+    padding-left: .5rem;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
     display: inline-block;
     padding-right: .5rem;
-    color: #888;
-    content: "/"
+    color: #aaa;
+    content: "›"; /* Новый разделитель */
+    font-size: 0.9em; /* Уменьшенный размер */
 }
 
-.breadcrumb-item+.breadcrumb-item:hover::before {
-    text-decoration: underline
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #007bff; /* Синий цвет ссылок */
 }
 
-.breadcrumb-item+.breadcrumb-item:hover::before {
-    text-decoration: none
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Тёмный синий при наведении */
 }
 
 .breadcrumb-item.active {
-    color: #888
+    color: #555; /* Более контрастный цвет */
+    font-weight: bold; /* Выделяем активный элемент */
+}
+
+/* Адаптивные стили */
+@media (max-width: 767.98px) {
+    .breadcrumb {
+        font-size: 12px; /* Уменьшенный шрифт */
+        padding: 0.3rem 0.5rem; /* Меньшие отступы */
+    }
 }
 
 .pagination {
