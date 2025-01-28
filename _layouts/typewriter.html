@@ -11,7 +11,9 @@ layout: page
 {% else %}
 <div class="post-content prose-content">
 {% endif %}<div class="post-title">{{ page.title }}</div>{{ content | strip_newlines }}
+{% if page.date_str %}<div class="post-date">{{ page.date_str }}</div>
+{% else %}
 {% if page.date and page.date != site.time %}
 <div class="post-date">{{ page.date | date: "%d.%m.%Y" }}</div>
-{% endif %}
+{% endif %}{% endif %}
 </div>
