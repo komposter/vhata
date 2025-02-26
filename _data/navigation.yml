@@ -1,5 +1,5 @@
 # Navigation menu in the header
-- title: "Стихи ({{ site.data.poems.size }})"
+- title: "Стихи"
   url: "poems"
-- title: "Проза ({{ site.data.prose.size }})"
+- title: "Проза"
   url: "prose"
