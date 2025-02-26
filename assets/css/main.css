@@ -18189,7 +18189,16 @@ html body .md-typeset .headerlink {
 }
 
 .td-sidebar-nav__section-title a {
-    color: #222
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.td-sidebar-nav__section-title a span.count {
+    font-size: 0.9em;
+    color: #888;
+    margin-left: 5px;
 }
 
 .td-sidebar-nav .td-sidebar-link {

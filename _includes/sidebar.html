@@ -46,8 +46,8 @@
           <a href="{% if section.url %}{{ site.baseurl }}/{{ section.url | replace: 'docs', versionlink }}{% else %}{{ section.external_url }}{% endif %}"
              class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">
             {{ section.title }}
-            {% if section.url == "poems" %} ({{ site.poems | size }}){% endif %}
-            {% if section.url == "prose" %} ({{ site.prose | size }}){% endif %}
+            {% if section.url == "poems" %} <span class="count">({{ site.poems | size }})</span>{% endif %}
+            {% if section.url == "prose" %} <span class="count">({{ site.prose | size }})</span>{% endif %}
           </a>
         </li>
         {% if section.links %}
