@@ -2,6 +2,16 @@
 layout: default
 ---
 {{ content }}
-{% include toc.html %}
+<ul class="sidebar-menu">
+  {% for item in site.data.toc %}
+    <li>
+      <a href="{{ site.baseurl }}/{{ item.url }}">
+        {{ item.title }}
+        {% if item.url == "poems" %} ({{ site.poems | size }}) {% endif %}
+        {% if item.url == "prose" %} ({{ site.prose | size }}) {% endif %}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
 {% include permalinks.html %}
 {% include tags.html %}
