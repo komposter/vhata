@@ -5048,6 +5048,16 @@ input[type=button].btn-block {
     padding-left: 0
 }
 
+.navbar-nav .nav-link span {
+    white-space: nowrap;
+}
+
+.navbar-nav .nav-link span.count {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-left: 5px;
+}
+
 .navbar-nav .dropdown-menu {
     position: static;
     float: none

@@ -13,7 +13,11 @@
                 {% for link in site.data.navigation %}
                     <li class="nav-item mr-4 mb-2 mb-lg-0">
                         <a class="nav-link" href="{% if link.url %}{{ site.baseurl }}/{{ link.url }}{% else %}{{ link.external_url }}{% endif %}" >
-                            <span>{{ link.title }}</span>
+                            <span>
+                                {{ link.title }}
+                                {% if link.url == "poems" %} <span class="count">({{ site.poems | size }})</span>{% endif %}
+                                {% if link.url == "prose" %} <span class="count">({{ site.prose | size }})</span>{% endif %}
+                            </span>
                         </a>
                     </li>
                 {% endfor %}
