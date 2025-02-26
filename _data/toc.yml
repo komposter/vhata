@@ -1,7 +1,7 @@
 # Navigation menu in the sidebar
 - title: "Главная"
   url: ""
-- title: "Стихи (" + site.data.poems.size.to_s + ")"
+- title: "Стихи ({{ site.data.poems.size }})"
   url: "poems"
-- title: "Проза (" + site.data.prose.size.to_s + ")"
+- title: "Проза ({{ site.data.prose.size }})"
   url: "prose"
